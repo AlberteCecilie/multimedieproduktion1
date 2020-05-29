@@ -1,0 +1,1313 @@
+/* Her er et stylesheet */
+
+html {
+  box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+     font-family: "Shree Devanagari 714";
+    
+}
+ 
+
+body {
+    
+    background-color:#d5f7be; 
+}
+
+  h1 {
+      color: white;
+      font-family: "Georgia";
+      font-weight: 200;
+    }
+
+#tekst1 {
+    color: white;
+      font-family: "Shree Devanagari 714";
+      font-weight: 200;
+}
+
+#deltag{
+      color: white;
+      font-family: "Shree Devanagari 714";
+      font-weight: 200;
+    }
+
+
+#sektion1{
+    color: #3c4339;
+    font-family: "Shree Devanagari 714";
+    font-weight: 600;
+    text-decoration: none;
+    height: 200px;
+    text-align: center;
+}
+
+#sektion2{
+    color: #3c4339;
+    font-family: "Shree Devanagari 714";
+    font-weight: 600;
+    text-decoration: none;
+    height: 200px;
+    text-align: center;
+}
+
+#sektion3{
+    color: #3c4339;
+    font-family: "Shree Devanagari 714";
+    font-weight: 600;
+    text-decoration: none;
+    height: 200px;
+    text-align: center;
+}
+
+#sektion4{
+    color: #3c4339;
+    font-family: "Shree Devanagari 714";
+    font-weight: 600;
+    text-decoration: none;
+    height: 200px;
+    text-align: center;
+}
+#sektion5{
+    color: #3c4339;
+    font-family: "Shree Devanagari 714";
+    font-weight: 600;
+    text-decoration: none;
+    height: 200px;
+    text-align: center;
+}
+
+#sektion6{
+    color: #3c4339;
+    font-family: "Shree Devanagari 714";
+    font-weight: 600;
+    text-decoration: none;
+    height: 200px;
+    text-align: center;
+}
+
+#et, #to, #tre, #fire, #fem, #seks{
+    font-family: "Shree Devanagari 714";
+    transform: rotate(-90deg);
+    color: #3c4339;
+}
+
+#tekst_et, #tekst_to, #tekst_tre, #tekst_fire, #tekst_fem, #tekst_seks{
+    font-family: "Shree Devanagari 714";
+    color: #3c4339;
+}
+.nav_ul {
+   list-style-type: none; 
+   text-align: right; 
+}
+
+h3 {
+    color: white;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+#tekst2{
+    color: white;
+    font-family: "Shree Devanagari 714";
+    text-align: center;
+}
+
+#tekst3{
+    color: white;
+    font-family: "Shree Devanagari 714";
+    text-align: center;
+}
+
+footer {
+    font-family:"Shree Devanagari 714"; 
+    color: white;
+    background-color: #6a7658;
+    position: absolute;
+    width: 100%;
+    left:0;
+    right: 0;
+    margin-top: 30%;
+}
+
+.footerliste{
+    display: flex;
+    font-family:"Shree Devanagari 714";
+    
+}
+
+.kontakt {
+    list-style-type: none;
+}
+.info{
+    list-style-type: none;
+}
+
+#copyright {
+    color: white; 
+    text-align: center; 
+}
+
+
+
+
+/** Til Smartphone **/
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    
+    /* her kommer menubaren */
+    
+    header {
+       /* laver den lille knap man kan krydse af */
+        position: absolute;
+        width: 90%; 
+        z-index: 7; /* header er foran resten */ 
+        font-family:"Shree Devanagari 714";
+        
+    }
+    
+    header ul {
+         margin: 0;
+        padding: 0;
+        list-style: none; 
+        overflow: hidden; 
+    }
+    
+    header li a {
+        z-index: 8;
+        display: block; 
+        padding: 15px 10px;
+       
+        text-decoration: none; 
+        color: white;
+        background-color: #6a7658;
+    }
+    
+    header li a:hover {
+        background-color:#6a7658;
+    }
+    
+   header .logo {
+        display: block; 
+        float: left;
+        font-size: 2em; 
+       padding: 10px 20px;
+       text-decoration: none;
+    }
+	
+    header .nav_ul {
+        z-index: 7;
+        clear: both; 
+        max-height: 0;
+        transition: max-height .2s ease-out; 
+    }
+    
+    header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right; 
+        padding: 28px 20px; 
+        position: relative;
+        user-select: none; 
+    }
+    
+    /* laver en streg, som bliver til burgerbar ikon */
+    
+    header .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px; 
+        position: relative;
+        transition: background .2s ease-out;
+        width: 20px; 
+        left: 35px;
+    }
+    
+    header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    /* lav en streg mere i ikonet */
+   
+    header .menu-icon .navicon:before {
+        z-index: 7;
+        top: 5px; 
+    }
+    
+    header .menu-icon .navicon:after {
+        z-index: 7;
+        top: -5px; 
+        
+    }
+    
+    /* når man trykker på de to streger kommer menubaren */ 
+      header .menuknap {
+        display: none;
+    }
+    
+    header .menuknap:checked ~ .nav_ul {
+        max-height: 240px;
+    }
+  
+    
+    header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:before, header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0; 
+    }
+    
+  
+    
+    .logo {
+        width: 50%;
+        margin-left: -20px; 
+    }
+    
+    #baggrund {
+        width: 100%;
+        margin-top:40%;
+    }
+    
+    
+ #konkurrence_start {
+    z-index: 2;
+    width: 95%;
+    height: 145px;
+     left: 10px;
+    position:relative;
+     margin-top: 35%;
+    
+}
+    
+    h1 {
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 90%;
+        top: 140px;
+        left: 80px;
+        
+    }
+    
+    #tekst1 {
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 70%;
+        top: 175px;
+        left: 22px;
+        right: 20px;
+        margin: 3%;
+        text-align: center;
+    }
+    
+    #deltag{
+         z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 70%;
+        left: 80px;
+        top: 230px;
+        text-align: center;
+    }
+    
+    #sektion1 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 50%;
+        left: 30px;
+        top: 390px;
+    }
+    
+     #sektion2 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 50%;
+        left: 230px;
+        top: 693px;
+    }
+    
+     #sektion3 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 50%;
+        left: 30px;
+        top: 1090px;
+    }
+    
+     #sektion4 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 50%;
+        left: 230px;
+        top: 1394px;
+    }
+    
+     #sektion5 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 50%;
+        left: 30px;
+        top: 1648px;
+    }
+    
+     #sektion6 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 50%;
+        left: 30px;
+        top: 1953px;
+    }
+    
+    #et {
+     z-index: 6;
+        position: absolute;
+        font-size: 110%;
+        left: 10px;
+        top: 340px;
+    }
+    
+#to {
+     z-index: 6;
+        position: absolute;
+        font-size: 110%;
+        left: 340px;
+        top: 640px;
+    }
+    
+    #tre {
+     z-index: 6;
+        position: absolute;
+        font-size: 110%;
+        left: 10px;
+        top: 1040px;
+    }
+    
+    #fire {
+     z-index: 6;
+        position: absolute;
+        font-size: 110%;
+        left: 340px;
+        top: 1340px;
+    }
+    
+    #fem {
+     z-index: 6;
+        position: absolute;
+        font-size: 110%;
+        left: 10px;
+        top: 1600px;
+    }
+    
+       #seks {
+     z-index: 6;
+        position: absolute;
+        font-size: 110%;
+        left: 10px;
+        top: 1900px;
+    }
+    
+    
+    #tekst_et{
+        z-index: 6;
+        position: absolute;
+        font-size: 65%;
+        width: 106px;
+        left: 30px;
+        top: 345px;
+        line-height: 10px;  
+    }
+    
+    #tekst_to{
+        z-index: 6;
+        position: absolute;
+        font-size: 65%;
+        width: 115px;
+        left: 230px;
+        top: 640px;
+        line-height: 10px;  
+    }
+    
+     #tekst_tre{
+        z-index: 6;
+        position: absolute;
+        font-size: 65%;
+        width: 115px;
+        left: 30px;
+        top: 1035px;
+        line-height: 10px;  
+    }
+    
+      #tekst_fire{
+        z-index: 6;
+        position: absolute;
+        font-size: 65%;
+        width: 115px;
+        left: 230px;
+        top: 1340px;
+        line-height: 10px;  
+    }
+    
+      #tekst_fem{
+        z-index: 6;
+        position: absolute;
+        font-size: 65%;
+        width: 115px;
+        left: 30px;
+        top: 1605px;
+        line-height: 10px;  
+    }
+    
+     #tekst_seks{
+        z-index: 6;
+        position: absolute;
+        font-size: 65%;
+        width: 115px;
+        left: 30px;
+        top: 1900px;
+        line-height: 10px;  
+    }
+    
+
+#konkurrence_slut {
+    z-index: 3;
+    width: 95%;
+    height: 200px;
+     left: 10px;
+    position:relative;
+     margin-top: 25%;
+}
+    
+    h3{  z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 90%;
+        top: 2110px;
+        letter-spacing: 1px;
+        left: 170px
+    
+        
+    }
+    #tekst2{
+          z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 70%;
+        top: 2145px;
+        left: 22px;
+        right: 20px;
+        text-align: center; 
+    }
+    
+     #tekst3{
+          z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 70%;
+        top: 2185px;
+        left: 22px;
+        right: 20px;
+        text-align: center; 
+    }
+    
+    #facebook_knap{
+        z-index: 5;
+        position: absolute;
+        width: 40%;
+        right: 110px;
+        top:2240px;  
+    }
+    
+    #mail_knap{
+        z-index: 5;
+        position: absolute;
+        width: 40%;
+        right: 110px;
+        top:2270px;  
+    }
+    
+    .footerliste{
+        font-size: 14px;
+        margin-left: -4%;
+    }
+    #smiley {
+        display: none;
+    }
+    
+    #copyright{
+        font-size: 14px;
+    }
+    
+}
+
+/** Til Tablet **/
+    
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    body {
+        
+    }
+    
+    /* her kommer menubaren */
+     header {
+        position: absolute;
+        width: 100%; 
+        z-index: 7; /* header er foran resten */
+        font-family: "Shree Devanagari 714"; 
+    }
+    
+    
+    header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; 
+        overflow: hidden;
+       
+
+    }
+    
+    header li a {
+        z-index: 7;
+        display: block; 
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4; 
+        text-decoration: none; 
+        color: white;
+        background-color: #6a7658;
+        
+    }
+    
+    header li a:hover {
+        background-color:#6a7658;
+
+    }
+    
+   header .logo {
+        display: block; 
+        float: left; 
+       padding: 10px 20px;
+       text-decoration: none;
+       width: 30%;
+    }
+	
+    header .nav_ul {
+        clear: both; 
+        max-height: 0;
+        transition: max-height .2s ease-out; 
+       
+    }
+    
+    header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right; 
+        padding: 28px 20px; 
+        position: relative;
+        user-select: none; 
+    }
+    
+    /* laver en streg, som bliver til burgerbar ikon */
+    
+    header .menu-icon .navicon {
+        background: #333;
+      display: block;
+        height: 2px; 
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px; 
+    }
+    
+    header .menu-icon .navicon:before, header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+        
+    }
+    
+    /* lav en streg mere i ikonet */
+   
+    header .menu-icon .navicon:before {
+        top: 5px; 
+    }
+    
+    header .menu-icon .navicon:after {
+        top: -5px; 
+        
+    }
+    
+    /* når man trykker på de to streger kommer menubaren */ 
+      header .menuknap {
+        display: none;
+    }
+    
+    header .menuknap:checked ~ .nav_ul {
+        max-height: 240px;
+    }
+  
+    
+    header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:before, header .menuknap:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0; 
+        
+    }
+    
+  
+    
+    .logo {
+        width: 60%;
+        margin-left: -20px; 
+    }
+    
+ #baggrund {
+        width: 100%;
+        margin-top:20%;
+    }
+    
+    
+ #konkurrence_start {
+    z-index: 2;
+    width: 95%;
+    height: 200px;
+    left: 20px;
+    position:relative;
+    margin-top: 27%;
+    
+}
+    
+    h1 {
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 150%;
+        top: 220px;
+        left: 210px;
+        
+    }
+    
+    #tekst1 {
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 100%;
+        top: 250px;
+        left: 22px;
+        right: 20px;
+        margin: 5%;
+        text-align: center;
+    }
+    
+    #deltag{
+         z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 100%;
+        left: 220px;
+        top: 350px;
+        text-align: center;
+    }
+    
+    #sektion1 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 70%;
+        left: 35px;
+        top: 607px;
+    }
+    
+     #sektion2 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 70%;
+        left: 595px;
+        top: 1155px;
+    }
+    
+     #sektion3 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 70%;
+        left: 35px;
+        top: 1985px;
+    }
+    
+     #sektion4 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 70%;
+        left: 590px;
+        top: 2495px;
+    }
+    
+     #sektion5 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 70%;
+        left: 35px;
+        top: 3065px;
+    }
+    
+     #sektion6 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 70%;
+        left: 35px;
+        top: 3625px;
+    }
+    
+    #et {
+     z-index: 6;
+        position: absolute;
+        font-size: 150%;
+        left: 10px;
+        top: 545px
+    }
+    
+#to {
+     z-index: 6;
+        position: absolute;
+        font-size: 150%;
+        left: 735px;
+        top: 1090px;
+    }
+    
+    #tre {
+     z-index: 6;
+        position: absolute;
+        font-size: 150%;
+        left: 10px;
+        top: 1920px;
+    }
+    
+    #fire {
+     z-index: 6;
+        position: absolute;
+        font-size: 150%;
+        left: 735px;
+        top: 2420px;
+    }
+    
+    #fem {
+     z-index: 6;
+        position: absolute;
+        font-size: 150%;
+        left: 10px;
+        top: 3000px;
+    }
+    
+       #seks {
+     z-index: 6;
+        position: absolute;
+        font-size: 150%;
+        left: 10px;
+        top: 3550px;
+    }
+    
+    
+    #tekst_et{
+        z-index: 6;
+        position: absolute;
+        font-size: 85%;
+        width: 140px;
+        left: 35px;
+        top: 545px;
+        line-height: 15px;  
+    }
+    
+    #tekst_to{
+        z-index: 6;
+        position: absolute;
+        font-size: 85%;
+        width: 145px;
+        left: 596px;
+        top: 1080px;
+        line-height: 15px;  
+    }
+    
+     #tekst_tre{
+        z-index: 6;
+        position: absolute;
+        font-size: 85%;
+        width: 145px;
+        left: 35px;
+        top: 1910px;
+        line-height: 15px;  
+    }
+    
+      #tekst_fire{
+        z-index: 6;
+        position: absolute;
+        font-size: 85%;
+        width: 150px;
+        left: 590px;
+        top: 2420px;
+        line-height: 15px;  
+    }
+    
+      #tekst_fem{
+        z-index: 6;
+        position: absolute;
+        font-size: 85%;
+        width: 135px;
+        left: 35px;
+        top: 3005px;
+        line-height: 15px;  
+    }
+    
+     #tekst_seks{
+        z-index: 6;
+        position: absolute;
+        font-size: 85%;
+        width: 175px;
+        left: 35px;
+        top: 3550px;
+        line-height: 15px;  
+    }
+
+#konkurrence_slut {
+    z-index: 3;
+    width: 95%;
+    height: 260px;
+     left: 25px;
+    position:relative;
+     margin-top: 25%;
+}
+    
+    h3{ z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 150%;
+        top: 4085px;
+        letter-spacing: 1px;
+        left: 345px
+    
+        
+    }
+    #tekst2{
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 110%;
+        margin: 10%;
+        top: 4075px;
+        left: 22px;
+        right: 20px;
+        text-align: center; 
+    }
+    
+     #tekst3{
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 110%;
+        margin: 10%;
+        top: 4135px;
+        left: 22px;
+        right: 20px;
+        text-align: center; 
+    }
+    
+    #facebook_knap{
+        z-index: 5;
+        position: absolute;
+        width: 35%;
+        right: 400px;
+        top:4280px;  
+    }
+    
+    #mail_knap{
+        z-index: 5;
+        position: absolute;
+        width: 35%;
+        right: 80px;
+        top:4280px;  
+    }
+    
+    footer{
+        height: 25%;
+        margin-left: 1%;
+        
+    }
+    
+    .footerliste{
+        font-size: 16px;
+        margin-left: -4%;
+        margin-top: 8%;
+        justify-content: space-around
+    }
+    
+    #smiley{
+        width: 10%
+    }
+    
+    #copyright{
+        font-size: 14px;
+        margin: 4%;
+    }
+   
+    
+}
+
+/** til desktop **/
+@media screen and (min-width: 1024px) and (max-width: 2400px) {
+    body {
+        
+    }
+    
+    .nav_ul {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-end; 
+        margin-top: -50px;
+         font-family: "Shree Devanagari 714";
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #3c4339; 
+    }
+    
+    a:hover {
+        color: #a35c2a; 
+    }
+    
+    
+    header .logo {
+        width: 25%;
+    }
+    
+    .nav_li {
+        width: 10%;
+    
+    }
+    
+   #baggrund {
+        width: 100%;
+        margin-top:30%;
+       margin-left: 5%
+    }
+    
+    
+ #konkurrence_start {
+    z-index: 2;
+    width: 95%;
+    height: 295px;
+     left: 65px;
+    position:relative;
+     margin-top: 20%;
+    
+}
+    
+   
+    
+    h1 {
+        z-index: 5;
+        position: absolute;
+        color: white;
+        font-size: 200%;
+        top: 380px;
+        left: 480px;
+        
+    }
+    
+    #tekst1 {
+        z-index: 6;
+        position: absolute;
+        color: white;
+        font-size: 130%;
+        top: 275px;
+        left: 72px;
+        right: 20px;
+        margin: 15%;
+        text-align: center;
+    }
+    
+    #deltag{
+         z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 130%;
+        left: 520px;
+        top: 545px;
+        text-align: center;
+    }
+    
+   
+    #sektion1{
+        z-index: 5;
+        position: absolute;
+        font-size: 110%;
+        left: 50px;
+        top: 1275px;
+    }
+    
+     #sektion2 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 110%;
+        left: 1180px;
+        top: 2175px; 
+    }
+    
+     #sektion3 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 110%;
+        left: 50px;
+        top: 3525px;
+    }
+    
+     #sektion4 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 110%;
+        left: 1140px;
+        top: 4425px;
+    }
+    
+     #sektion5 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 110%;
+        left: 50px;
+        top: 5430px;
+    }
+    
+     #sektion6 {
+        
+        z-index: 5;
+        position: absolute;
+        font-size: 110%;
+        left: 50px;
+        top: 6150px;
+    }
+    
+    #et {
+     z-index: 6;
+        position: absolute;
+        font-size: 220%;
+        left: 10px;
+        top: 1190px
+    }
+    
+#to {
+     z-index: 6;
+        position: absolute;
+        font-size: 220%;
+        left: 1370px;
+        top: 2070px;
+    }
+    
+    #tre {
+     z-index: 6;
+        position: absolute;
+        font-size: 220%;
+        left: 10px;
+        top: 3420px;
+    }
+    
+    #fire {
+     z-index: 6;
+        position: absolute;
+        font-size: 220%;
+        left: 1370px;
+        top: 4320px;
+    }
+    
+    #fem {
+     z-index: 6;
+        position: absolute;
+        font-size: 220%;
+        left: 10px;
+        top: 5340px;
+    }
+    
+       #seks {
+     z-index: 6;
+        position: absolute;
+        font-size: 220%;
+        left: 10px;
+        top: 6050px;
+    }
+    
+    
+    #tekst_et{
+        z-index: 6;
+        position: absolute;
+        font-size: 130%;
+        width: 220px;
+        left: 50px;
+        top: 1195px;
+        line-height: 20px;  
+    }
+    
+    #tekst_to{
+        z-index: 6;
+        position: absolute;
+        font-size: 130%;
+        width: 195px;
+        left: 1180px;
+        top: 2070px;
+        line-height: 20px;  
+    }
+    
+     #tekst_tre{
+        z-index: 6;
+        position: absolute;
+        font-size: 130%;
+        width: 235px;
+        left: 50px;
+        top: 3420px;
+        line-height: 20px;  
+    }
+    
+      #tekst_fire{
+        z-index: 6;
+        position: absolute;
+        font-size: 130%;
+        width: 220px;
+        left: 1140px;
+        top: 4320px;
+        line-height: 20px;  
+    }
+    
+      #tekst_fem{
+        z-index: 6;
+        position: absolute;
+        font-size: 130%;
+        width: 255px;
+        left: 50px;
+        top: 5350px;
+        line-height: 20px;  
+    }
+    
+     #tekst_seks{
+        z-index: 6;
+        position: absolute;
+        font-size: 130%;
+        width: 225px;
+        left: 50px;
+        top: 6050px;
+        line-height: 20px;  
+    }
+
+#konkurrence_slut {
+    z-index: 3;
+    width: 95%;
+    height: 400px;
+     left: 60px;
+    position:relative;
+     margin-top: 20%;
+}
+    
+    h3{ z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 250%;
+        top: 7500px;
+        letter-spacing: 1px;
+        left: 665px;
+    
+        
+    }
+    #tekst2{
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 140%;
+        margin: 12%;
+        top: 7450px;
+        left: 22px;
+        right: 20px;
+        text-align: center; 
+    }
+    
+     #tekst3{
+        z-index: 4;
+        position: absolute;
+        color: white;
+        font-size: 140%;
+        margin: 10%;
+        top: 7565px;
+        left: 22px;
+        right: 20px;
+        text-align: center; 
+    }
+    
+    #facebook_knap{
+        z-index: 5;
+        position: absolute;
+        width: 30%;
+        right: 750px;
+        top:7780px;  
+    }
+    
+    #mail_knap{
+        z-index: 5;
+        position: absolute;
+        width: 30%;
+        right: 150px;
+        top:7780px;  
+    }
+    
+    footer{
+        width: 105%;
+        left: 0;
+        right: 0;
+        
+        
+    }
+    
+    .footerliste{
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: -4%;
+        margin-top: 8%;
+        justify-content: space-around
+    }
+    
+    #smiley{
+        width: 10%;
+    }
+    
+    #copyright{
+        font-size: 20px;
+        margin: 4%;
+    }
+    
+    footer {
+       margin-top: 20%; 
+        
+    }
+    
+    .footertablet {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%; }
+    
+  
+    
