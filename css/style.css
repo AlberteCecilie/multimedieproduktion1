@@ -35,6 +35,8 @@ body {
     }
 
 
+/*her styles links til scroll*/
+
 #sektion1{
     color: #3c4339;
     font-family: "Shree Devanagari 714";
@@ -88,16 +90,22 @@ body {
     text-align: center;
 }
 
+/* her styles tallene ved teksterne*/
+
 #et, #to, #tre, #fire, #fem, #seks{
     font-family: "Shree Devanagari 714";
     transform: rotate(-90deg);
     color: #3c4339;
 }
 
+/* her styles tekserne ved elementerne*/
+
 #tekst_et, #tekst_to, #tekst_tre, #tekst_fire, #tekst_fem, #tekst_seks{
     font-family: "Shree Devanagari 714";
     color: #3c4339;
 }
+
+
 .nav_ul {
    list-style-type: none; 
    text-align: right; 
@@ -317,6 +325,8 @@ footer {
         text-align: center;
     }
     
+    /* her styles links til scroll behavior */
+    
     #sektion1 {
         
         z-index: 5;
@@ -371,6 +381,8 @@ footer {
         top: 1953px;
     }
     
+    /*her styles tallene ved siden af teksten*/
+    
     #et {
      z-index: 6;
         position: absolute;
@@ -418,7 +430,7 @@ footer {
         left: 10px;
         top: 1900px;
     }
-    
+      /*her styles teksen ved elemterne*/
     
     #tekst_et{
         z-index: 6;
@@ -720,6 +732,9 @@ footer {
         text-align: center;
     }
     
+    
+    /* her styles links til scroll behavior */
+    
     #sektion1 {
         
         z-index: 5;
@@ -774,6 +789,9 @@ footer {
         top: 3625px;
     }
     
+    
+      /*her styles tallene ved siden af teksten*/
+    
     #et {
      z-index: 6;
         position: absolute;
@@ -782,7 +800,7 @@ footer {
         top: 545px
     }
     
-#to {
+    #to {
      z-index: 6;
         position: absolute;
         font-size: 150%;
@@ -822,6 +840,8 @@ footer {
         top: 3550px;
     }
     
+    
+      /*her styles teksten ved elementerne*/
     
     #tekst_et{
         z-index: 6;
@@ -1051,6 +1071,8 @@ footer {
         text-align: center;
     }
     
+    
+    /* her styles links til scroll behavior */
    
     #sektion1{
         z-index: 5;
@@ -1105,6 +1127,8 @@ footer {
         top: 6150px;
     }
     
+      /*her styles tallene ved siden af teksten*/
+    
     #et {
      z-index: 6;
         position: absolute;
@@ -1153,6 +1177,7 @@ footer {
         top: 6050px;
     }
     
+      /*her styles teksten ved elementerne*/
     
     #tekst_et{
         z-index: 6;
@@ -1307,7 +1332,8 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-left: 5%;
-        margin-right: 5%; }
+        margin-right: 5%; 
+    }
     
   
     
